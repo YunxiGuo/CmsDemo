@@ -1,0 +1,18 @@
+﻿{
+  "TestList": {
+    "ContentList": [
+      {
+        "Id": 101,
+        "Title": "101标题",
+        "NerRong": "101内容",
+        "Add_time": "2019-1-26 14:30",
+        "Modify_time": null
+      }
+    ]
+  } ,
+  "TestMode": {
+    "StringList": [ "value1,value2,value3" ],
+    "Id": 1 
+  }  
+
+}

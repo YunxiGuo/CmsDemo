@@ -1,0 +1,31 @@
+﻿@model ContentViewModel
+@using Humanizer
+@{
+    ViewData["Title"] = "内容列表";
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">@ViewData["Title"]</div>
+    
+    <table class="table table-hover">
+        <tr>
+            <td><input type="checkbox" class="done-checkebox"></td>
+            <td>序号</td>
+            <td>标题</td>
+            <td>内容</td>
+            <td>添加时间</td>
+        </tr>
+        @foreach (var o in Model.Contents.ContentList)
+        {
+            <tr>
+                <td>
+                    <input type="checkbox" class="done-checkebox">
+                </td>
+                <td>@o.Id</td>
+                <td>@o.Title</td>
+                <td>@o.NeiRong</td>
+                <td>@o.Add_time</td>
+            </tr>
+        }
+    </table>
+</div>
